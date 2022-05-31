@@ -1,0 +1,1109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Ubuntu&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #effbfd;
+}
+
+/* NAVBAR */
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 4;
+	background-color: white;
+	border-bottom: .5px solid rgba(0, 0, 0, .1);
+	border-radius: 2px;
+}
+header a {
+	color: black;
+}
+
+.header-container {
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+
+img {
+	width: 100px;
+	height: 80px;
+}
+
+.nav-left a {
+	margin: auto;
+	padding-left: .5rem;
+}
+
+.nav-left,
+.nav-right {
+	align-self: center;
+}
+
+.nav-left {
+	margin: auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.nav-right {
+	justify-self: right;
+	font-size: 1.2rem;
+}
+
+.nav-right a {
+	margin-right: .5rem;
+	padding: .5rem;
+	transition: 500ms ease-in-out;
+}
+
+.nav-right a:hover {
+	color: #23c9e7;
+}
+
+.search-btn,
+.search-btn-dropdown {
+	font-size: 1.2rem;
+	padding: .5rem;
+	padding-left: 1rem;
+	cursor: pointer;
+	border: none;
+	background-color: #45d1edbb !important;
+	color: white !important;
+}
+
+.search-icon {
+	margin-left: 2rem;
+}
+
+.drop-icon {
+	display: none;
+}
+
+.drop-menu {
+	width: 80%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+	grid-template-rows: auto;
+	font-size: 1.2rem;
+	transition: 500ms ease-in-out;
+}
+
+.drop-menu a {
+	padding: 0.5rem;
+	background-color: #d0f3fa;
+	text-align: center;
+	transition: 500ms ease-in-out;
+	border-bottom: .1px solid rgba(0, 0, 0, .05);
+}
+
+.drop-menu a:first-child {
+	/* border-radius: .5rem .5rem 0 0; */
+}
+
+.drop-menu a:last-child {
+	border-bottom-right-radius: .5rem;
+	border-bottom-left-radius: .5rem;
+	background-color: #45d1ed;
+}
+
+.drop-menu a:hover {
+	background-color: #a2e8f6;
+	/* border-radius: .5rem; */
+}
+
+@media screen and (max-width: 1200px) {
+	.header-container {
+		width: 100%;
+	}
+
+	.search-btn {
+		margin-right: .5rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.search-btn,
+	.nav-right a {
+		display: none;
+	}
+
+	.drop-icon {
+		display: inline !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.nav-left a {
+		margin: 0;
+		font-size: 1rem;
+		align-self: center;
+	}
+}
+
+/* CAROUSEL 1 */
+.carousel-one {
+	position: relative;
+}
+
+.owl-carousel {
+	padding: 2rem 0;
+	cursor: grab;
+}
+
+.item {
+	background-color: whitesmoke;
+	min-height: 400px;
+	height: 60vh;
+	border-radius: .5rem;
+}
+
+.item-home {
+	min-height: 500px;
+	background-color: whitesmoke;
+	height: 70vh;
+	border-radius: .5rem;
+}
+
+.home-page-image1,
+.home-page-image2,
+.home-page-image3 {
+	opacity: .9;
+	position: relative;
+}
+
+/* .home-page-image1 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7206232834930848) 0%,
+			rgba(0, 0, 0, 0.11278014623818278) 49%,
+			rgba(0, 0, 0, 0.72) 100%
+		),
+		url("/assets/avengers-endgame/image1.jpg") center/cover;
+	opacity: .9;
+	position: relative;
+}
+.home-page-image2 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7206232834930848) 0%,
+			rgba(0, 0, 0, 0.11278014623818278) 49%,
+			rgba(0, 0, 0, 0.72) 100%
+		),
+		url("/assets/knives-out/image1.jpg") center/cover;
+	opacity: .9;
+	position: relative;
+}
+.home-page-image3 {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7206232834930848) 0%,
+			rgba(0, 0, 0, 0.11278014623818278) 49%,
+			rgba(0, 0, 0, 0.72) 100%
+		),
+		url("/assets/godzilla-king-of-the-monsters/image1.jpg") center/cover;
+	opacity: .9;
+	position: relative;
+} */
+
+.home-page-image1-heading {
+	position: absolute;
+	left: 5%;
+	bottom: 40%;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
+.home-page-image1-heading h1 {
+	font-size: 1.8rem;
+}
+
+.home-page-image1-heading a {
+	color: #fff;
+}
+
+.play-icon-container-home-page {
+	position: absolute;
+	display: flex;
+	left: 5%;
+	bottom: 20%;
+	align-items: center;
+	color: #fff;
+}
+
+.play-icon-container-home-page h2 {
+	margin-left: 1rem;
+	font-size: 1.5rem;
+}
+
+.carousel-prev,
+.carousel-next {
+	width: 50px;
+	height: auto;
+	border-radius: 0 5px 5px 0;
+	background-color: #45d1ed86;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-next {
+	border-radius: 5px 0 0 5px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+	background-color: #23c9e7;
+}
+
+.carousel-prev {
+	left: 0;
+}
+
+.carousel-next {
+	right: 0;
+}
+
+/* SEARCH MODAL SECTION*/
+#popup {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	display: none;
+	color: white;
+	z-index: 50;
+}
+
+#popup .popup-content {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+}
+
+#popup a.close-popup {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+/* #popup:target {
+	display: block;
+} */
+
+#popup .search {
+	width: 100vw;
+	height: 50vh;
+	background: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.box {
+	background-color: white;
+	width: 40%;
+	height: 80%;
+	margin: 0 auto;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	padding: .5rem;
+}
+
+.box input {
+	width: 100%;
+	font-size: 1.2rem;
+	border: none;
+	outline: none;
+}
+
+.categories {
+	text-align: center;
+}
+
+.categories-list {
+	width: 80vw;
+	margin: .5rem auto 0;
+}
+
+.categories-list li {
+	list-style: none;
+	display: inline;
+	max-width: auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: .5rem;
+}
+
+.categories-list a {
+	color: white;
+}
+
+.categories-list a:hover {
+	color: #a2e8f6;
+}
+
+@media screen and (min-width: 1024px) {
+	#popup a.close-popup {
+		right: 20px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.box {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.box {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.box {
+		width: 80%;
+	}
+}
+
+/* SECTION 1 */
+.section-1-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.section-1-row-1 {
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-1-row-1 h1 {
+	font-size: 2rem;
+	flex-grow: 1;
+}
+
+.section-1-row-1 a {
+	font-size: 1rem;
+}
+
+.section-1-row-2 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+.section-1-row-2-card {
+	min-height: 400px;
+	min-width: 276px;
+	background-color: #23c9e7;
+	padding: 2rem;
+	border-radius: 8px;
+	color: #fff;
+	position: relative;
+}
+
+.section-1-row-2-card:hover {
+	filter: brightness(85%);
+}
+
+.section-1-row-2-card.card-1 {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.49093140674238445) 0%,
+			rgba(0, 0, 0, 0.15199583251269255) 50%,
+			rgba(0, 0, 0, 0.49) 100%
+		),
+		url("/assets/ready-player-one/image-portrait.jpg") center/cover;
+	position: relative;
+}
+.section-1-row-2-card.card-2 {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.49093140674238445) 0%,
+			rgba(0, 0, 0, 0.15199583251269255) 50%,
+			rgba(0, 0, 0, 0.49) 100%
+		),
+		url("/assets/deadpool-2/image-portrait.jpg") center/cover;
+	position: relative;
+}
+.section-1-row-2-card.card-3 {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.49093140674238445) 0%,
+			rgba(0, 0, 0, 0.15199583251269255) 50%,
+			rgba(0, 0, 0, 0.49) 100%
+		),
+		url("/assets/shutter-island/image-portrait.jpg") center/cover;
+	position: relative;
+}
+.section-1-row-2-card.card-4 {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.49093140674238445) 0%,
+			rgba(0, 0, 0, 0.15199583251269255) 50%,
+			rgba(0, 0, 0, 0.49) 100%
+		),
+		url("/assets/alita-battle-angel/image-portrait.jpg") center/cover;
+	position: relative;
+}
+
+.section-1-row-2-card-1-container {
+	position: absolute;
+	left: 5%;
+	bottom: 1%;
+	transition: bottom ease .5s;
+}
+
+.section-1-row-2-card-1-container > * {
+	margin-bottom: 5px;
+}
+
+.imdb-logo-small-container {
+	display: flex;
+	align-items: center;
+}
+
+.imdb-logo-small {
+	height: 45px;
+	width: 45px;
+	border: 2px solid #f5de50;
+	padding: 2px;
+	border-radius: 50%;
+	margin-right: .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.section-1-container {
+		width: 100%;
+	}
+	.section-1-row-1 {
+		margin: 0 10px;
+	}
+
+	.section-1-row-2 {
+		margin: 0 10px;
+		overflow-x: scroll;
+	}
+}
+
+/* SECTION 2 (EVERYTHING SAME AS SECTION 1) */
+.section-2-container {
+	margin-top: 50px;
+}
+
+/* FOOTER */
+footer {
+	width: 100%;
+	/* position: absolute;
+	bottom: 0; */
+	background-color: black;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.footer-container {
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-container h5 {
+	max-width: auto;
+}
+
+.footer-container form {
+	padding: 1rem;
+}
+
+.request-div {
+	width: 100%;
+	margin-top: .5rem;
+	padding: .5rem;
+	border-radius: 8px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.request-div input {
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+.request-movie-form-btn {
+	padding: .5rem;
+	margin-top: .5rem;
+	font-size: 1rem;
+	border-radius: 8px;
+	background-color: white;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 758px) {
+	.footer-container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.footer-container {
+		flex-direction: column-reverse;
+	}
+
+	.footer-container h5 {
+		margin-top: 2rem;
+	}
+}
+
+/*INDIVIDUAL MOVIE PAGE SECTION  */
+.image1 {
+	/* background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7206232834930848) 0%,
+			rgba(0, 0, 0, 0.11278014623818278) 49%,
+			rgba(0, 0, 0, 0.72) 100%
+		),
+		url("/assets/once-upon-a-time-in-hollywood/image1.jpg") center/cover; */
+	opacity: .9;
+	position: relative;
+}
+.image2 {
+	/* background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5777661406359419) 0%,
+			rgba(0, 0, 0, 0) 49%,
+			rgba(0, 0, 0, 0.58) 100%
+		),
+		url("/assets/once-upon-a-time-in-hollywood/image2.jpg") center/cover; */
+}
+.image3 {
+	/* background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5777661406359419) 0%,
+			rgba(0, 0, 0, 0) 49%,
+			rgba(0, 0, 0, 0.58) 100%
+		),
+		url("/assets/once-upon-a-time-in-hollywood/image3.jpg") center/cover; */
+}
+
+/* SHARE ICON */
+#sharePopup {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+	color: white;
+	z-index: 50;
+}
+#sharePopup .sharePopup-content {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+}
+
+/* #sharePopup a.close-popup {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+} */
+
+.sharePopup-icons-container {
+	background: #fff;
+	padding: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: -2px 1px 29px -3px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: -2px 1px 29px -3px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: -2px 1px 29px -3px rgba(0, 0, 0, 0.6);
+}
+
+.sharePopup-icons-container-header {
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sharePopup-icons-container-body {
+	padding: .5rem;
+	padding-left: 0;
+}
+
+.share-link {
+	margin-top: .5rem;
+	padding-bottom: 3px;
+	font-size: 1rem;
+	width: fit-content;
+	cursor: pointer;
+	border: none;
+	border-bottom: 2px solid rgb(196, 195, 195);
+	transition: border-bottom .5s linear;
+	overflow-x: hidden;
+}
+
+.share-link:focus {
+	outline: none;
+	border-bottom: 2px solid #45d1ed;
+}
+
+#playPopup {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	display: none;
+	color: white;
+	z-index: 50;
+}
+#playPopup .playPopup-content {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+}
+
+#playPopup a.close-popup {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+.playPopup-trailer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.playPopup-trailer iframe {
+	width: 854px;
+	height: 480px;
+}
+
+@media screen and (max-width: 1200px) {
+	.playPopup-trailer iframe {
+		width: 640px;
+		height: 360px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.playPopup-trailer iframe {
+		width: 426px;
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.playPopup-trailer iframe {
+		width: 100vw;
+	}
+	.sharePopup-icons-container {
+		width: 80vw;
+	}
+	.sharePopup-icons-container-body {
+		overflow-x: scroll;
+	}
+}
+
+/* #playPopup:target {
+	display: block;
+} */
+
+.play-icon-container {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.play-icon-container h2 {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+.play-icon {
+	display: block;
+	background: #fff;
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 100%;
+	box-sizing: border-box;
+	color: #666;
+	animation: at-ripple 0.6s linear infinite;
+	overflow: hidden;
+}
+.play-icon.blue {
+	background: #23c9e7;
+	color: white;
+	animation: at-ripple-blue 0.6s linear infinite;
+}
+.play-icon.blue:hover {
+	background: #45d1ed;
+}
+.play-icon.two {
+	z-index: 2;
+}
+@-webkit-keyframes at-ripple {
+	0% {
+		box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 0 rgba(102, 102, 102, 0.1),
+			0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1);
+	}
+	100% {
+		box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1),
+			0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
+	}
+}
+@keyframes at-ripple {
+	0% {
+		box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 0 rgba(102, 102, 102, 0.1),
+			0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1);
+	}
+	100% {
+		box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1),
+			0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
+	}
+}
+/* blue Animate */
+@-webkit-keyframes at-ripple-blue {
+	0% {
+		box-shadow: 0 4px 10px rgba(35, 201, 231, .3), 0 0 0 0 rgba(35, 201, 231, .3), 0 0 0 5px rgba(35, 201, 231, .3),
+			0 0 0 10px rgba(35, 201, 231, .3);
+	}
+	100% {
+		box-shadow: 0 4px 10px rgba(35, 201, 231, .3), 0 0 0 5px rgba(35, 201, 231, .3),
+			0 0 0 10px rgba(35, 201, 231, .3), 0 0 0 20px rgba(255, 65, 130, 0);
+	}
+}
+@keyframes at-ripple-blue {
+	0% {
+		box-shadow: 0 4px 10px rgba(35, 201, 231, .3), 0 0 0 0 rgba(35, 201, 231, .3), 0 0 0 5px rgba(35, 201, 231, .3),
+			0 0 0 10px rgba(35, 201, 231, .3);
+	}
+	100% {
+		box-shadow: 0 4px 10px rgba(35, 201, 231, .3), 0 0 0 5px rgba(35, 201, 231, .3),
+			0 0 0 10px rgba(35, 201, 231, .3), 0 0 0 20px rgba(255, 65, 130, 0);
+	}
+}
+
+.movie-section {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.how-to-download {
+	padding: .5rem;
+	margin: .5rem auto 0;
+	width: fit-content;
+	width: -moz-max-content; /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid transparent;
+	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+	border-image-slice: 1;
+	cursor: pointer;
+}
+
+.how-to-download h3 {
+	margin-left: .5rem;
+}
+
+.movie-title {
+	padding: .5rem;
+	margin-top: .5rem;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.movie-name {
+	font-size: 2rem;
+}
+
+.ratings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rating-type {
+	text-align: center;
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.imdb-logo {
+	border: 2px solid #f5de50;
+}
+
+.rotten-tomatoes-logo {
+	border: 2px solid #f93208;
+	/* border: 2px solid #06c854; */
+}
+
+.google-logo {
+	border: 2px solid #4285f4;
+}
+
+.imdb-logo,
+.google-logo,
+.rotten-tomatoes-logo {
+	padding: 3px;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	margin-top: .5rem;
+}
+
+.synopsis {
+	padding: .5rem;
+	margin-bottom: .5rem;
+}
+
+.more-details-title {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: .5rem;
+	padding: .5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.more-details-title > span {
+	cursor: pointer;
+}
+
+.more-details {
+	width: 600px;
+	margin: 0 auto;
+	padding: .5rem;
+	display: none;
+	grid-template-columns: auto auto;
+	gap: .5rem;
+}
+
+.more-details-left,
+.more-details-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.more-details span {
+	margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.movie-section {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.more-details-title,
+	.more-details {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.movie-title {
+		font-size: 1rem;
+	}
+	.movie-name {
+		font-size: 1.5rem;
+	}
+}
+
+/* OWL CAROUSEL REMOCE WHITE SPACE */
+.owl-nav {
+	height: 0;
+}
+.owl-drag {
+	padding: 0;
+	padding-top: 1rem;
+}
+
+/* BROWSE MOVIES SECTION */
+.advanced-search-container {
+	height: 100vh;
+}
+
+.advanced-search {
+	width: 1000px;
+	/* background: #eee; */
+	padding: .5rem;
+	margin: .5rem auto;
+}
+
+.advanced-search-col-1 > span {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.advanced-search-box {
+	width: 100%;
+	margin-top: .5rem;
+	padding: .5rem;
+	border-radius: 5px;
+	border: 2px solid #eee;
+}
+
+.advanced-search-col-2 {
+	padding: .5rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.advanced-search-col-2 > div {
+	padding: .5rem;
+}
+
+.advanced-search-col-2 select {
+	border: 2px solid #eee;
+	border-radius: 5px;
+	width: 150px;
+	box-sizing: border-box;
+	padding: .5rem;
+	margin-top: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.advanced-search {
+		width: 100%;
+	}
+}
+
+/* SCROLL TO TOP BUTTON */
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 7px;
+	right: 26px;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	line-height: 42px;
+	background: #23c9e7;
+	border: none;
+	outline: none;
+	z-index: 9;
+	cursor: pointer;
+}
+#scrollToTop:hover {
+	background-color: #45d1ed;
+}
+
+hr {
+	width: 80%;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* LOADER */
+#loader-container {
+	width: 100%;
+	height: 100vh;
+	/* display: none; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 2;
+}
+lottie-player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+/* MOVIE NOT FOUND SVG */
+.not-found {
+	width: 100%;
+}
+
+.not-found-text {
+	margin: 1rem auto;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.not-found-svg {
+	width: 100%;
+	height: 500px;
+}
+
+@media screen and (max-width: 576px) {
+	.not-found {
+		min-height: 400px;
+	}
+	.not-found-text {
+		font-size: 1.2rem;
+	}
+	.not-found-svg {
+		height: 400px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.not-found-svg {
+		height: 300px;
+	}
+}

@@ -1,0 +1,84 @@
+<%- include('./partials/header') %> 
+
+<%- include('./partials/search-modal') %> 
+
+<!-- ADVANCED SEARCH SECTION -->
+  <form class="advanced-search-container">
+   <div class="advanced-search">
+    <div class="advanced-search-col-1">
+     <span>Search Term: </span>
+     <div class="box advanced-search-box">
+       <input type="text" placeholder="Search" name="search" autofocus autocomplete="off" />
+        <button type="submit" class="submit-btn" style="background-color: #fff; border: none; cursor: pointer;">
+         <i class="fa fa-search fa-2x"></i>
+        </button>
+     </div>
+    </div>
+    <div class="advanced-search-col-2">
+     <div>
+      <p>Genre:</p>
+      <select name="Genre">
+       <option value="All" selected>All</option>
+       <option value="Action">Action</option>
+       <option value="Drama">Drama</option>
+       <option value="Family">Family</option>
+       <option value="Thriller">Thriller</option>
+       <option value="Comedy">Comedy</option>
+       <option value="Romantic">Romantic</option>
+       <option value="Horror">Horror</option>
+      </select>
+     </div>
+     <div>
+      <p>Year:</p>
+      <select name="Year">
+       <option value="All" selected>All</option>
+       <option value="1970-1980">1970-1980</option>
+       <option value="1980-1990">1980-1990</option>
+       <option value="1990-2000">1990-2000</option>
+       <option value="2000-2005">2000-2005</option>
+       <option value="2005-2010">2005-2010</option>
+       <option value="2010-2015">2010-2015</option>
+       <option value="2015-2020">2015-2020</option>
+      </select>
+     </div>
+     <div>
+      <p>Rating:</p>
+      <select name="Rating">
+       <option value="All" selected>All</option>
+       <option value="9+">9+</option>
+       <option value="8+">8+</option>
+       <option value="7+">7+</option>
+       <option value="6+">6+</option>
+       <option value="5+">5+</option>
+       <option value="4+">4+</option>
+       <option value="3+">3+</option>
+       <option value="2+">2+</option>
+       <option value="1+">1+</option>
+      </select>
+     </div>
+     <div>
+      <p>Language:</p>
+      <select name="Language">
+       <option value="All" selected>All</option>
+       <option value="English">English</option>
+       <option value="Hindi">Hindi</option>
+      </select>
+     </div>
+     <div>
+      <p>Sort by:</p>
+      <select name="Sort">
+       <option value="Latest" selected>Latest</option>
+       <option value="Oldest">Oldest</option>
+       <option value="Alphabetical">Alphabetical</option>
+       <option value="Downloads">Downloads</option>
+       <option value="Likes">Likes</option>
+      </select>
+     </div>
+    </div>
+   </div>
+  <hr>
+  </form>
+  <!-- ADVANCED SEARCH SECTION END-->
+
+<%- include('./partials/footer') %> 
+

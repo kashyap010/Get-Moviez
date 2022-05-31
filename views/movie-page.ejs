@@ -1,0 +1,162 @@
+<%- include('./partials/header') %> 
+
+<%- include('./partials/search-modal') %> 
+
+<!-- MOVIE SECTION -->
+  <section class="movie-section">
+    <!-- <div class="how-to-download">
+    <a href="#"><i class="fa fa-hand-point-right fa-2x"></i></a>
+    <h3 style="display: inline-block;">How to download?</h3>
+    </div> -->
+
+    <div class="movie-title">
+      <div class="movie-title-left">
+        <h1 class="movie-name">Once Upon a Time... In Hollywood</h1>
+        <span>2019</span>
+        |
+        <span>Mystery/Comedy</span>
+        |
+        <span>2h 10m</span>
+        |
+        <span>English</span>
+      </div>
+      <div class="movie-title-right"><a href="javascript:void(0)" id="share-link-icon" onclick="showShareLink()"><i class="fas fa-share-alt" style="color: #000"></i></a></div>
+    </div>
+
+    <div id="sharePopup">
+      <div class="sharePopup-content">
+        <div class="sharePopup-icons-container">
+          <div class="sharePopup-icons-container-header">
+            <h1>Share</h1>
+            <a href="javascript:void(0)" class="close-popup" id="close-share-link" onclick="closeShareLink()"><i class="fas fa-times fa-lg" style="color: black;"></i></a>
+          </div>
+          <div class="sharePopup-icons-container-body">
+            <p style="color:grey;">Click to copy link</p>
+            <input class="share-link" type="text" value="https://getmoviez.com/currentmoviename" size='40' readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-theme" style="margin-top: 0;">
+      <div class="item image1" style="background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7206232834930848) 0%,
+			rgba(0, 0, 0, 0.11278014623818278) 49%,
+			rgba(0, 0, 0, 0.72) 100%
+		),
+		url(/assets/once-upon-a-time-in-hollywood/image1.jpg) center/cover;">
+        <div class="play-icon-container">
+          <a href="javascript:void(0)" class="play-icon blue two" onclick="showTrailer()"><i class="fa fa-play"></i></a>
+          <h2>Watch Trailer</h2>
+        </div>
+      </div>
+      <div class="item image2" style="background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5777661406359419) 0%,
+			rgba(0, 0, 0, 0) 49%,
+			rgba(0, 0, 0, 0.58) 100%
+		),
+		url(/assets/once-upon-a-time-in-hollywood/image2.jpg) center/cover;">
+      </div>
+      <div class="item image3" style="background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5777661406359419) 0%,
+			rgba(0, 0, 0, 0) 49%,
+			rgba(0, 0, 0, 0.58) 100%
+		),
+		url(/assets/once-upon-a-time-in-hollywood/image3.jpg) center/cover;">
+      </div>
+    </div>
+
+    <div id="playPopup">
+      <div class="playPopup-content">
+        <a href="javascript:void(0)" class="close-popup" onclick="stopTrailer()"><i class="fas fa-2x fa-times" style="color:#fff"></i></a>
+          <div class="playPopup-trailer">
+            <iframe id="youtube-trailer" src="https://www.youtube.com/embed/ELeMaP8EPAA?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+
+    <div class="ratings">
+      <div class="rating-type">
+        <span>7.6/10</span>
+        <span title="IMDb"><img class="imdb-logo" src="/logos/imdb-60.png" alt=""></span>
+      </div>
+      <div class="rating-type">
+        <span>85%</span>
+        <span title="Tomatometer"><img class="rotten-tomatoes-logo" src="/logos/rotten-tomatoes-certified-fresh.png" alt=""></span>
+      </div>
+      <div class="rating-type">
+        <span>74%</span>
+        <span title="Google Users"><img class="google-logo" src="/logos/google.png" alt=""></span>
+      </div>
+    </div>
+
+    <div class="how-to-download">
+    <a href="#"><i class="fa fa-download fa-2x" style="color: black"></i></a>
+    <h3 style="display: inline-block;">Download</h3>
+    </div>
+    <div class="more-details-title">
+      <h3>More Details</h3>
+      <span class="collapsible-icon"><i class="fas fa-chevron-down"></i></span>
+    </div>
+
+    <div class="more-details">
+      <div class="more-details-left">
+        <span><strong>Size</strong>: 1.1Gb</span>
+        <span><strong>Quality</strong>: 720p</span>
+      </div>
+      <div class="more-details-right">
+        <span><strong>Director</strong>: Quentin Tarantino</span>
+        <span><strong>Cast</strong>: Brad Pitt, Leonardo DiCaprio, Dakota Fanning, Margot Robbie</span>
+        <span><strong>Film Series</strong>: -</span>
+      </div>
+    </div>
+
+    <div class="synopsis">
+      Actor Rick Dalton gained fame and fortune by starring in a 1950s television Western, but is now struggling to find meaningful work in a Hollywood that he doesn't recognize anymore. He spends most of his time drinking and palling around with Cliff Booth, his easygoing best friend and longtime stunt double. Rick also happens to live next door to Roman Polanski and Sharon Tate -- the filmmaker and budding actress whose futures will forever be altered by members of the Manson Family.
+    </div>
+  </section>
+  <!-- MOVIE SECTION END -->
+
+  <!-- RELATED POSTS -->
+  <section class="related-posts section-1-container">
+      <div class="section-1-row-1">
+      <h1 style="font-size:1.5rem;">Related Posts</h1>
+      <a href="#">Show All</a>
+    </div>
+    <div class="section-1-row-2">
+      <div class="section-1-row-2-card card-1" onmouseover="topTransition(this,'5%')" onmouseout="topTransition(this,'2%')">
+        <a href="#" style="position: absolute; right: 2%; top: 2%;"><i class="fas fa-external-link-alt" style="color: #fff;"></i></a>
+        <div class="section-1-row-2-card-1-container">
+          <h3>Ready Player One</h3>
+          <span class="imdb-logo-small-container"><img class="imdb-logo-small" src="/logos/imdb-60.png">7.5/10</span>
+        </div>
+      </div>
+      <div class="section-1-row-2-card card-2" onmouseover="topTransition(this,'5%')" onmouseout="topTransition(this,'2%')">
+        <a href="#" style="position: absolute; right: 2%; top: 2%;"><i class="fas fa-external-link-alt" style="color: #fff;"></i></a>
+        <div class="section-1-row-2-card-1-container">
+          <h3>Deadpool 2</h3>
+          <span class="imdb-logo-small-container"><img class="imdb-logo-small" src="/logos/imdb-60.png">7.7/10</span>
+        </div>
+      </div>
+      <div class="section-1-row-2-card card-3" onmouseover="topTransition(this,'5%')" onmouseout="topTransition(this,'2%')">
+        <a href="#" style="position: absolute; right: 2%; top: 2%;"><i class="fas fa-external-link-alt" style="color: #fff;"></i></a>
+        <div class="section-1-row-2-card-1-container">
+          <h3>Shutter Island</h3>
+          <span class="imdb-logo-small-container"><img class="imdb-logo-small" src="/logos/imdb-60.png">8.2/10</span>
+        </div>
+      </div>
+      <div class="section-1-row-2-card card-4" onmouseover="topTransition(this,'5%')" onmouseout="topTransition(this,'2%')">
+        <a href="#" style="position: absolute; right: 2%; top: 2%;"><i class="fas fa-external-link-alt" style="color: #fff;"></i></a>
+        <div class="section-1-row-2-card-1-container">
+          <h3>Alita: Battle Angel</h3>
+          <span class="imdb-logo-small-container"><img class="imdb-logo-small" src="/logos/imdb-60.png">7.3/10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RELATED POSTS END -->
+
+<%- include('./partials/footer') %> 

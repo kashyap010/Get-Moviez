@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>GetMovies-Admin</title>
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+</head>
+
+<body>
+ <h1 class="text-center mt-2">Admin</h1>
+
+ <form class="container" autocomplete="off" action="/admin" method="POST">
+  <div class="columns">
+   <div class="column form-group">
+    <label class="form-label" for="name">Name</label>
+    <input type="text" class="form-input" id="name" placeholder="Name" name="name" required>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="genre">Genre</label>
+    <input type="text" class="form-input" id="genre" placeholder="Genre1, genre2, genre3....." name="genre" required>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="tags">Tags</label>
+    <input type="text" class="form-input" id="tags" placeholder="Tag1, tag2, tag3...." name="tags" required>
+   </div>   
+  </div>
+
+  <div class="columns">
+   <div class="column col-4 form-group">
+    <label class="form-label">Ratings</label>
+    <div class="columns ml-1">
+      <div class="columns column col-4">
+        <input type="text" class="ratings-imdb form-input col-12" placeholder="Imdb" name="imdb" required>
+        <p class="form-input-hint" hidden>0-10</p>
+      </div>
+      <div class="columns column col-4 ml-1">
+        <input type="text" class="ratings-rotten-tomatoes form-input col-12" placeholder="Rotten tomatoes" name="rottenTomatoes" required>
+        <p class="form-input-hint" hidden>0-100</p>
+      </div>
+      <div class="columns column col-4 ml-1">
+        <input type="text" class="ratings-google-users form-input col-12" placeholder="Google Users" name="googleUsers" required>
+        <p class="form-input-hint" hidden>0-100</p>
+      </div>
+    </div>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="year">Year</label>
+    <input type="text" class="form-input" id="year" placeholder="Year" name="year" required>
+    <p class="form-input-hint" hidden>Cannot be gt current year</p>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="duration">Duration</label>
+    <input type="text" class="form-input" id="duration" placeholder="2h 40m" name="duration" required>
+    <p class="form-input-hint" hidden>Invalid format</p>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="language">Language</label>
+    <input type="text" class="form-input" id="language" placeholder="English" name="language" required>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="size">Size</label>
+    <input type="text" class="form-input" id="size" placeholder="1.28gb" name="size" required> 
+    <p class="form-input-hint" hidden>Invalid size unit</p>
+   </div>
+   <div class="column form-group">
+    <label class="form-label" for="quality">Quality</label>
+    <input type="text" class="form-input" id="quality" placeholder="720p" name="quality" required> 
+   </div>
+  </div>
+
+  <div class="columns">
+   <div class="column col-6 form-group">
+    <label class="form-label" for="synopsis">Synopsis</label>
+    <textarea class="form-input" id="synopsis" rows="5" placeholder="Synopsis" name="synopsis" required></textarea>
+   </div>
+   <div class="column col-6 columns">
+    <div class="column col-6 form-group">
+     <label class="form-label" for="director">Director</label>
+     <input type="text" class="form-input" id="director" placeholder="Director" name="director" required> 
+    </div>
+    <div class="column col-6 form-group">
+     <label class="form-label" for="film-series">Film Series</label>
+     <input type="text" class="form-input" id="film-series" placeholder="Series name (- if none)" name="filmSeries" required> 
+    </div>   
+    <div class="column form-group">
+     <label class="form-label" for="cast">Cast</label>
+     <input type="text" class="form-input" id="cast" placeholder="Name1, name2, name3...." name="cast" required>  
+    </div>    
+   </div>
+  </div>
+
+  <div class="columns">
+   <div class="column col-6 form-group">
+    <label class="form-label" for="dir-name">Directory Name</label>
+     <input type="text" class="form-input" id="dir-name" placeholder="Folder name where images are stored" name="directoryName" required> 
+   </div>
+   <div class="column col-6 form-group">
+    <label class="form-label" for="dir-name">Embed Url</label>
+     <input type="text" class="form-input" placeholder="Youtube embed url" name="embedUrl" required> 
+   </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg p-centered mt-2">Submit</button>
+ </form>
+ <script src="scripts/validation.js"></script>
+</body>
+</html>

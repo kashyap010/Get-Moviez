@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>GetMovies - <%= path.charAt(0).toUpperCase() + path.slice(1) %> </title>
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+ <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+ <style>
+  .container{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  }
+ </style>
+</head>
+
+<body>
+ <div class="container columns">
+  <div class="card column col-3 p-centered p-2">
+    <div class="card-header text-center">
+     <div class="card-title h1">Enter Credentials</div>
+     <div class="card-subtitle h5 text-gray">No Trespassing</div>
+    </div>
+    <div class="divider"></div>
+    <form action="/<%= path %>" method="post">
+    <div class="card-body">
+      <div class="form-group">
+       <label class="form-label h5" for="email">Email</label>
+       <input type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" class="form-input" id="email" placeholder="Email" name="username" autocomplete="off" required>
+      </div>
+      <div class="form-group">
+       <label class="form-label h5" for="password">Password</label>
+       <input type="password" class="form-input" id="password" placeholder="Password" name="password" required>
+      </div>
+     </div>
+     <div class="card-footer text-center">
+      <button type="submit" class="btn btn-primary btn-block h5"><%= path.charAt(0).toUpperCase() + path.slice(1) %> </button>
+     </div>
+    </form>
+  </div>
+ </div>
+</body>
