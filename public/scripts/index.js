@@ -55,8 +55,10 @@ function topFunction() {
 }
 
 //SHOW TRAILER
-function showTrailer() {
+function showTrailer(elem) {
 	// trailer.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+	let url = elem.getAttribute('data-url');
+	trailer.src = url;
 	playTrailer.style.display = 'block';
 }
 function stopTrailer() {
