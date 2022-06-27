@@ -1,6 +1,4 @@
 const MovieModel = require('../models/movie');
-const chalk = require('chalk'),
-	log = console.log;
 
 function getMovie(req, res) {
 	let movieName = req.params.movieName;

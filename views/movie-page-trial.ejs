@@ -42,7 +42,7 @@
 		),
 		url('<%= movie.imagesSrc.image1 %>') center/cover;">
         <div class="play-icon-container">
-          <a href="javascript:void(0)" class="play-icon blue two" onclick="showTrailer()"><i class="fa fa-play"></i></a>
+          <a href="javascript:void(0)" class="play-icon blue two" onclick="showTrailer(this)" data-url='<%= movie.embedUrl %> '><i class="fa fa-play"></i></a>
           <h2>Watch Trailer</h2>
         </div>
       </div>
